@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="./404/style.css">
+
+</head>
+
+<body>
+
+
+    <div class="container">
+
+        <h1 class="text">404</h1>
+
+        <div class="content">
+            <p>Trang bạn đang tìm kiếm không tồn tại, hoặc đang sửa chữa.</p>
+            <a href="trang-chu.html" class="btn">trở lại trang chủ</a>
+        </div>
+
+        <img src="./404/tree.png" class="tree" alt="">
+
+    </div>
+
+    <script>
+        let container = document.querySelector('.container')
+        let text = document.querySelector('.text');
+
+        container.addEventListener('mousemove', (e) => {
+
+            var x = (window.innerWidth / 2 - e.pageX) / 10;
+            var y = (window.innerHeight / 2 - e.pageY) / 10;
+
+            text.style.transform = `translateX(${x}px) translateY(${y}px)`;
+
+        })
+    </script>
+
+</body>
+
+</html>
